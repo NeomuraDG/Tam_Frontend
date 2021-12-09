@@ -204,7 +204,7 @@ export default {
             contraseña:contraseña
           })
           alert("Registro exitoso")
-          window.location= "http://localhost:8080/"
+          window.location= "https://database-tam.herokuapp.com/"
       }
   },
 
@@ -233,7 +233,7 @@ export default {
                 Auto.createToken(usuariovalido.data.token)
                 console.log(Auto.getToken())
                 alert("Bienvenido a TAM DATABASE")
-                window.location = "http://localhost:8080/IngresarDatosBiologicos"
+                window.location = "https://database-tam.herokuapp.com/IngresarDatosBiologicos"
                 }
                 } catch (error) {
                   console.log(error)
