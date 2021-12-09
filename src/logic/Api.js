@@ -37,9 +37,9 @@ export default {
     },
 
     //Metodo consultar datos biologicos
-    obtenerTodo(subdir){
+    obtenerTodo(subdir,token){
         const ax1 = `${API}/${subdir}`;
-        return axios.get(ax1);
+        return axios.get(ax1,{token:token});
     },
 
     obtenerParasitoGenero(subdir){
